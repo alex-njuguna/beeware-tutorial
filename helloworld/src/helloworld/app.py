@@ -9,7 +9,10 @@ from toga.style.pack import COLUMN, ROW
 
 def greeting(name):
     if name:
-        return f"Hello, {name}"
+        if  name == "Brutus":
+            return "BeeWare, the IDE of Python"
+        else:
+            return f"Hello, {name}"
     return "Hello, Stranger"
 
 class HelloWorld(toga.App):
