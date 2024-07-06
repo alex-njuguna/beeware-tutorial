@@ -19,14 +19,14 @@ class TemperatureConverter(toga.App):
 
         # Box for Fahrenheit input
         f_box = toga.Box(style=Pack(direction=ROW, padding=10, alignment=CENTER))
-        self.f_input = toga.TextInput(style=Pack(flex=1, padding_left=10, background_color=text_color))
+        self.f_input = toga.TextInput(style=Pack(flex=1, padding_left=10, background_color=text_color, text_align=CENTER))
         f_label = toga.Label("Fahrenheit", style=Pack(text_align=LEFT, color=text_color))
         f_box.add(f_label)
         f_box.add(self.f_input)
 
         # Box for Celsius output
         c_box = toga.Box(style=Pack(direction=ROW, padding=10, alignment=CENTER))
-        self.c_input = toga.TextInput(readonly=True, style=Pack(flex=1, padding_left=10, background_color=text_color))
+        self.c_input = toga.TextInput(readonly=True, style=Pack(flex=1, padding_left=10, background_color=text_color, text_align=CENTER))
         c_label = toga.Label("Celsius", style=Pack(text_align=RIGHT, color=text_color))
         c_box.add(c_label)
         c_box.add(self.c_input)
